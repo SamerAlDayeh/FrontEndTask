@@ -1,0 +1,100 @@
+.member-card-wrapper {
+  overflow: hidden;
+}
+
+.member-card-top {
+  background-color: #ffffff;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.member-photo-container {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.member-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-name {
+  font-size: 20px;
+  margin: 15px 15px 3px 15px;
+  text-align: left;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+.member-name:hover {
+  color: #b8860b;
+}
+
+.member-info-bottom {
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.member-title {
+  font-size: 15px;
+  color: #b8860b;
+  margin: 0;
+  height: 35px;
+  text-align: left;
+}
+
+.member-social-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.member-social-section .bar {
+  background-color: #6a6a6a;
+  width: 70px;
+  height: 2px;
+  z-index: 999;
+}
+
+.first-name {
+  position: relative;
+  color: #ebebeb;
+  font-size: 70px;
+  bottom: 70px;
+}
+@media (max-width: 768px) {
+  .member-name {
+    font-size: 18px;
+    margin: 10px 10px 3px 10px;
+  }
+
+  .member-title {
+    font-size: 13px;
+    height: auto;
+  }
+
+  .member-info-bottom {
+    padding: 8px 10px;
+  }
+
+  .first-name {
+    font-size: 50px;
+    bottom: 50px;
+  }
+
+  .social-link {
+    width: 25px;
+    height: 30px;
+  }
+
+  .social-link .svg-inline--fa {
+    font-size: 16px;
+  }
+}

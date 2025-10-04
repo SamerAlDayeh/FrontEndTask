@@ -1,0 +1,136 @@
+.testimonial-content {
+  max-width: 800px;
+  margin: 80px auto;
+  text-align: left;
+  position: relative;
+}
+
+.quote-icon {
+  position: absolute;
+  top: -10%;
+  left: -20%;
+  font-size: 80px;
+  line-height: 1;
+  color: #b8860b;
+}
+
+.quote-text {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-top: 20px;
+  font-weight: 300;
+  width: 90%;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.client-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 20%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.client-name {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.client-title {
+  font-size: 14px;
+  color: #b8860b;
+  margin: 0;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #555;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #b8860b;
+}
+
+@media (max-width: 960px) {
+  .testimonial-content {
+    padding: 0 20px;
+    max-width: 100%;
+  }
+
+  .quote-text {
+    text-align: center;
+    margin: 20px auto;
+    width: 100%;
+    font-size: 22px;
+  }
+
+  .carousel-dots {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-content {
+    padding: 40px 20px 20px 20px;
+    text-align: center;
+    width: 100%;
+    margin: 40px auto;
+  }
+
+  .quote-icon {
+    position: relative;
+    top: auto;
+    left: auto;
+    font-size: 50px;
+    margin: 0 auto 10px auto;
+    width: fit-content;
+  }
+
+  .quote-text {
+    font-size: 18px;
+  }
+
+  .client-info {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .client-image {
+    margin: 0 0 10px 0;
+  }
+
+  .client-details {
+    text-align: center;
+    margin: 0;
+  }
+
+  .carousel-dots {
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+}

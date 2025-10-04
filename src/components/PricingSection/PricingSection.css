@@ -1,0 +1,34 @@
+.pricing-section-layout {
+  display: flex;
+  max-width: 1200px;
+  margin: 80px auto;
+  min-height: 600px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 768px) {
+  .pricing-section-layout {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 40px 0;
+    box-shadow: none;
+    min-height: auto;
+  }
+}
+.services-column {
+  flex: 1;
+  padding: 60px 50px;
+}
+
+.form-column {
+  flex: 1;
+  padding: 60px 50px;
+}
+
+@media (max-width: 768px) {
+  .services-column,
+  .form-column {
+    flex: none;
+    width: 100%;
+    padding: 30px 20px;
+  }
+}

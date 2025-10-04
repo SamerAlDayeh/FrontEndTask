@@ -1,0 +1,163 @@
+.project-card {
+  flex-shrink: 0;
+  width: var(--card-width);
+  margin-right: var(--card-margin);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s, transform 0.5s;
+  position: relative;
+  pointer-events: auto;
+
+  display: block;
+}
+
+.project-card.faded-slide {
+  opacity: 0.35;
+  transform: scale(0.95);
+  pointer-events: none;
+  width: var(--card-width);
+  margin-right: var(--card-margin);
+  height: auto;
+  display: block;
+}
+
+.project-card.active-slide {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.project-image-container {
+  position: relative;
+  height: 500px;
+}
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-info-overlay {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-100%, -50%);
+  width: 350px;
+  background-color: #333;
+  padding: 30px 40px;
+  text-align: left;
+  color: white;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.project-card.active-slide .project-info-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.project-card.faded-slide .project-info-overlay {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.zoom-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 320px;
+    max-width: 90vw;
+    margin: 0 auto 20px auto;
+    flex-shrink: 0;
+    transition: none;
+
+    display: flex !important;
+    flex-direction: column;
+    height: auto;
+
+    opacity: 1 !important;
+    transform: none !important;
+    pointer-events: auto !important;
+  }
+
+  .project-card.faded-slide {
+    display: none !important;
+  }
+
+  .project-card.active-slide {
+    width: 320px;
+    height: auto;
+  }
+
+  .project-image-container {
+    height: 250px;
+    width: 100%;
+  }
+
+  .project-info-overlay {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+
+    width: 100%;
+    padding: 20px;
+
+    background-color: #333;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    box-shadow: none;
+    text-align: center;
+    transition: none;
+    height: auto;
+  }
+
+  .zoom-button {
+    bottom: 25px;
+    right: 5px;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    background-color: #b8860b;
+    border-radius: 50%;
+    color: white;
+    z-index: 100;
+    margin: 0;
+  }
+
+  .address-text {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .project-image-container .project-image {
+    height: 65%;
+    object-fit: cover;
+  }
+
+  .project-info-overlay .date-category-wrapper .date-text {
+    font-size: 10px;
+  }
+  .project-info-overlay .date-category-wrapper .category-text {
+    font-size: 10px;
+  }
+  .project-info-overlay .date-category-wrapper .address-text {
+    font-size: 10px;
+  }
+}

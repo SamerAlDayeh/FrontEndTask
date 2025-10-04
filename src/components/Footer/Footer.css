@@ -1,0 +1,149 @@
+/* Footer.css */
+
+.main-footer {
+  background-color: #333333; /* اللون الداكن للخلفية */
+  color: #cccccc; /* لون النص الرمادي الفاتح */
+  padding: 80px 5%;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --------------------------------- */
+/* 1. الصف العلوي (الأعمدة الأربعة) */
+/* --------------------------------- */
+
+.footer-top-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.footer-column {
+  flex-basis: 25%;
+  text-align: left;
+}
+
+.column-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.footer-column p {
+  font-size: 13px;
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.footer-column a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+}
+
+/* --------------------------------- */
+/* 2. الخط الفاصل والشعار */
+/* --------------------------------- */
+
+.footer-divider-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.divider-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #555555;
+}
+
+.logo-placeholder {
+  padding: 0 20px;
+  color: #999999;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.logo-placeholder span {
+  font-size: 16px;
+}
+
+/* --------------------------------- */
+/* 3. صف حقوق النشر */
+/* --------------------------------- */
+
+.footer-copyright {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.footer-copyright p {
+  font-size: 12px;
+  color: #999999;
+}
+
+/* ======================================================= */
+/* 🎯 Media Query للهواتف (Footer.css) */
+/* ======================================================= */
+@media (max-width: 768px) {
+  .main-footer {
+    padding: 40px 5%; /* تقليل الحشو الرأسي */
+  }
+
+  /* ⬅️ تكديس الأعمدة عمودياً */
+  .footer-top-row {
+    flex-direction: column;
+    gap: 30px; /* مسافة أصغر بين الأعمدة */
+    margin-bottom: 30px;
+  }
+
+  /* ⬅️ توسيط محتوى كل عمود */
+  .footer-column {
+    flex-basis: 100%; /* تأخذ العرض الكامل */
+    text-align: center; /* توسيط النصوص */
+  }
+
+  /* ⬅️ تنسيق قسم الروابط الاجتماعية (لتوسيطها بشكل جيد) */
+  .socials-col p {
+    /* إجبار الروابط على الظهور كـ blocks لتوسيطها */
+    display: block;
+    margin: 5px auto;
+  }
+
+  /* ⬅️ تصغير حجم الخط الفاصل */
+  .footer-divider-section {
+    margin: 30px 0;
+  }
+
+  .divider-line {
+    /* تقليل عرض الخطوط الجانبية على الهاتف */
+    flex-grow: 0.5;
+  }
+
+  .logo-placeholder {
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .logo-placeholder span {
+    font-size: 14px;
+  }
+
+  /* ⬅️ توسيط حقوق النشر (تنسيقها الحالي جيد لكن للتأكيد) */
+  .footer-copyright {
+    padding-top: 10px;
+  }
+}

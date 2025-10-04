@@ -1,0 +1,12 @@
+/* PricingSection.css */
+
+.services-column {
+  flex: 1; /* يأخذ جزءاً متساوياً من المساحة */
+  padding: 60px 50px;
+  position: relative;
+  background-color: #f7f7f7; /* لون خلفية فاتح */
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* المسافة بين عناصر الخدمة */
+  overflow: hidden; /* لإخفاء أي جزء زائد من الخلفية */
+}

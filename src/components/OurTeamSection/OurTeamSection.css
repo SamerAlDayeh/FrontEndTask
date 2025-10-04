@@ -1,0 +1,98 @@
+.team-section-layout {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f8f8f8;
+}
+
+.team-header {
+  margin-bottom: 60px;
+}
+
+.main-heading {
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.sub-heading {
+  color: #b8860b;
+  font-size: 15px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-section-layout {
+    padding: 40px 10px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .client-logos-section {
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .trusted-by-text {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .logos-grid {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    justify-content: flex-start;
+    padding-bottom: 15px;
+    gap: 40px;
+    padding-left: 10px;
+  }
+
+  .logos-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .logo-item {
+    min-width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto;
+  }
+
+  .logo-caption {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+  }
+}

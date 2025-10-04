@@ -1,0 +1,38 @@
+.social {
+  display: flex;
+  align-items: center;
+  margin-right: 10%;
+  z-index: 999;
+}
+
+.social-link {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 35px;
+  text-decoration: none;
+  color: #6a6a6a;
+  transition: ease 0.3s;
+}
+
+.social-link .svg-inline--fa,
+.social-link i {
+  font-size: 18px;
+}
+
+.social-link:hover {
+  color: #b8860b;
+}
+
+.social-link.facebook {
+  background: #1877f2;
+  color: #fff;
+}
+.social-link.instagram {
+  background: linear-gradient(45deg, #feda75, #d62976);
+  color: #fff;
+}
+.social-link.email {
+  background: #6b5744;
+  color: #fff;
+}

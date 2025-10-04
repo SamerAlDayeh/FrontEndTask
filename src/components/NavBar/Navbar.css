@@ -1,0 +1,51 @@
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.logo {
+  margin-right: 30%;
+  margin-left: 13px;
+}
+
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 2000;
+}
+
+.menu-btn span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+
+.menu-btn.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 10px);
+}
+
+.menu-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(10px, -10px);
+}
+@media (max-width: 768px) {
+  .menu-btn.open span {
+    background-color: black;
+  }
+}
